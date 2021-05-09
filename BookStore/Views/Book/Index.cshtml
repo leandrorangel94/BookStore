@@ -1,0 +1,28 @@
+﻿@model IEnumerable<BookStore.Domain.Livro>
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_LayoutNovo.cshtml";
+
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@Html.Partial("Partials/ListBookPartial", Model)
+
+
+@section menu{
+    <div>
+        Olá, você está na página principal
+    </div>
+}
+
+@section Scripts{
+    <scripts>
+        alert('Olá')
+    </scripts>
+}
